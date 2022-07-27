@@ -1,0 +1,661 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		9F90210B283963C6008ADF0D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F90210A283963C6008ADF0D /* AppDelegate.swift */; };
+		9F90210D283963C6008ADF0D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F90210C283963C6008ADF0D /* SceneDelegate.swift */; };
+		9F902112283963C6008ADF0D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9F902110283963C6008ADF0D /* Main.storyboard */; };
+		9F902114283963CA008ADF0D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9F902113283963CA008ADF0D /* Assets.xcassets */; };
+		9F902117283963CA008ADF0D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9F902115283963CA008ADF0D /* LaunchScreen.storyboard */; };
+		9F9021242839675C008ADF0D /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F9021232839675C008ADF0D /* Network.swift */; };
+		9F90212628396ACE008ADF0D /* Responses.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F90212528396ACE008ADF0D /* Responses.swift */; };
+		9FB30AC72842427F0011144C /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9FB30AC62842427F0011144C /* Colors.xcassets */; };
+		9FB30ADC284248550011144C /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FB30ADB284248550011144C /* BaseViewController.swift */; };
+		9FB30ADF28424E470011144C /* ProductsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FB30ADE28424E470011144C /* ProductsViewController.swift */; };
+		9FB30AE3284255040011144C /* ProductsDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FB30AE1284255040011144C /* ProductsDetailsViewController.swift */; };
+		9FB30AE4284255040011144C /* ProductsDetailsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9FB30AE2284255040011144C /* ProductsDetailsViewController.xib */; };
+		9FB30AE928425E6C0011144C /* ProductCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FB30AE728425E6C0011144C /* ProductCollectionViewCell.swift */; };
+		9FB30AEA28425E6C0011144C /* ProductCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9FB30AE828425E6C0011144C /* ProductCollectionViewCell.xib */; };
+		9FB30AEC28426B140011144C /* Double+extansions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FB30AEB28426B140011144C /* Double+extansions.swift */; };
+		9FB30AEE284271560011144C /* UIView+extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FB30AED284271560011144C /* UIView+extensions.swift */; };
+		9FB30AF02842D1EE0011144C /* UIImageView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FB30AEF2842D1EE0011144C /* UIImageView+Extensions.swift */; };
+		9FC7B801283A7E27003199F8 /* EndpointType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FC7B800283A7E27003199F8 /* EndpointType.swift */; };
+		9FC7B805283A8398003199F8 /* Int+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FC7B804283A8398003199F8 /* Int+Extensions.swift */; };
+		9FC7B807283A8806003199F8 /* HttpMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FC7B806283A8806003199F8 /* HttpMethod.swift */; };
+		9FD07E13287C43A7003B3BCD /* PopupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FD07E11287C43A7003B3BCD /* PopupViewController.swift */; };
+		9FD07E14287C43A7003B3BCD /* PopupViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9FD07E12287C43A7003B3BCD /* PopupViewController.xib */; };
+		9FD07E18287C5844003B3BCD /* StoresViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FD07E16287C5844003B3BCD /* StoresViewController.swift */; };
+		9FD07E19287C5844003B3BCD /* StoresViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9FD07E17287C5844003B3BCD /* StoresViewController.xib */; };
+		9FD07E1D287C7AE3003B3BCD /* CartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FD07E1B287C7AE3003B3BCD /* CartViewController.swift */; };
+		9FD07E1E287C7AE3003B3BCD /* CartViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9FD07E1C287C7AE3003B3BCD /* CartViewController.xib */; };
+		9FD07E20287C7B73003B3BCD /* CartViewModal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FD07E1F287C7B73003B3BCD /* CartViewModal.swift */; };
+		9FD07E24287C873A003B3BCD /* CartTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FD07E22287C873A003B3BCD /* CartTableViewCell.swift */; };
+		9FD07E25287C873A003B3BCD /* CartTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9FD07E23287C873A003B3BCD /* CartTableViewCell.xib */; };
+		DE6BB7682CB99172A7BD1394 /* Pods_Hygge.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4275E2AB72B37DFF4B500C32 /* Pods_Hygge.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		4275E2AB72B37DFF4B500C32 /* Pods_Hygge.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Hygge.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		42EE6C95AA7B6A162522715E /* Pods-Hygge.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Hygge.release.xcconfig"; path = "Target Support Files/Pods-Hygge/Pods-Hygge.release.xcconfig"; sourceTree = "<group>"; };
+		9F902107283963C6008ADF0D /* Hygge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Hygge.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9F90210A283963C6008ADF0D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		9F90210C283963C6008ADF0D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		9F902111283963C6008ADF0D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		9F902113283963CA008ADF0D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		9F902116283963CA008ADF0D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		9F902118283963CA008ADF0D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9F9021232839675C008ADF0D /* Network.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
+		9F90212528396ACE008ADF0D /* Responses.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Responses.swift; sourceTree = "<group>"; };
+		9FB30AC62842427F0011144C /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
+		9FB30ADB284248550011144C /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		9FB30ADE28424E470011144C /* ProductsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductsViewController.swift; sourceTree = "<group>"; };
+		9FB30AE1284255040011144C /* ProductsDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductsDetailsViewController.swift; sourceTree = "<group>"; };
+		9FB30AE2284255040011144C /* ProductsDetailsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProductsDetailsViewController.xib; sourceTree = "<group>"; };
+		9FB30AE728425E6C0011144C /* ProductCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductCollectionViewCell.swift; sourceTree = "<group>"; };
+		9FB30AE828425E6C0011144C /* ProductCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProductCollectionViewCell.xib; sourceTree = "<group>"; };
+		9FB30AEB28426B140011144C /* Double+extansions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Double+extansions.swift"; sourceTree = "<group>"; };
+		9FB30AED284271560011144C /* UIView+extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+extensions.swift"; sourceTree = "<group>"; };
+		9FB30AEF2842D1EE0011144C /* UIImageView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+Extensions.swift"; sourceTree = "<group>"; };
+		9FC7B800283A7E27003199F8 /* EndpointType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndpointType.swift; sourceTree = "<group>"; };
+		9FC7B804283A8398003199F8 /* Int+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Int+Extensions.swift"; sourceTree = "<group>"; };
+		9FC7B806283A8806003199F8 /* HttpMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpMethod.swift; sourceTree = "<group>"; };
+		9FD07E11287C43A7003B3BCD /* PopupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopupViewController.swift; sourceTree = "<group>"; };
+		9FD07E12287C43A7003B3BCD /* PopupViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PopupViewController.xib; sourceTree = "<group>"; };
+		9FD07E16287C5844003B3BCD /* StoresViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoresViewController.swift; sourceTree = "<group>"; };
+		9FD07E17287C5844003B3BCD /* StoresViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = StoresViewController.xib; sourceTree = "<group>"; };
+		9FD07E1B287C7AE3003B3BCD /* CartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartViewController.swift; sourceTree = "<group>"; };
+		9FD07E1C287C7AE3003B3BCD /* CartViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CartViewController.xib; sourceTree = "<group>"; };
+		9FD07E1F287C7B73003B3BCD /* CartViewModal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartViewModal.swift; sourceTree = "<group>"; };
+		9FD07E22287C873A003B3BCD /* CartTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartTableViewCell.swift; sourceTree = "<group>"; };
+		9FD07E23287C873A003B3BCD /* CartTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CartTableViewCell.xib; sourceTree = "<group>"; };
+		C3AE04DC0EA4F3224C763CEB /* Pods-Hygge.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Hygge.debug.xcconfig"; path = "Target Support Files/Pods-Hygge/Pods-Hygge.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9F902104283963C6008ADF0D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DE6BB7682CB99172A7BD1394 /* Pods_Hygge.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2F89DD7018C1C17E6E831DF6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4275E2AB72B37DFF4B500C32 /* Pods_Hygge.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		84022CF9A15E06A9E6716C0C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C3AE04DC0EA4F3224C763CEB /* Pods-Hygge.debug.xcconfig */,
+				42EE6C95AA7B6A162522715E /* Pods-Hygge.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		9F9020FE283963C6008ADF0D = {
+			isa = PBXGroup;
+			children = (
+				9F902109283963C6008ADF0D /* Hygge */,
+				9F902108283963C6008ADF0D /* Products */,
+				84022CF9A15E06A9E6716C0C /* Pods */,
+				2F89DD7018C1C17E6E831DF6 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		9F902108283963C6008ADF0D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9F902107283963C6008ADF0D /* Hygge.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9F902109283963C6008ADF0D /* Hygge */ = {
+			isa = PBXGroup;
+			children = (
+				9F902118283963CA008ADF0D /* Info.plist */,
+				9FB30AE528425DF40011144C /* Cells */,
+				9F90211E28396530008ADF0D /* Main Delegate */,
+				9F90212228396706008ADF0D /* Network */,
+				9F902121283966AB008ADF0D /* Resources */,
+				9F9021202839661F008ADF0D /* Storyboards */,
+				9FC7B802283A8329003199F8 /* Utilities */,
+				9F90211F2839656E008ADF0D /* ViewControllers */,
+			);
+			path = Hygge;
+			sourceTree = "<group>";
+		};
+		9F90211E28396530008ADF0D /* Main Delegate */ = {
+			isa = PBXGroup;
+			children = (
+				9F90210A283963C6008ADF0D /* AppDelegate.swift */,
+				9F90210C283963C6008ADF0D /* SceneDelegate.swift */,
+			);
+			path = "Main Delegate";
+			sourceTree = "<group>";
+		};
+		9F90211F2839656E008ADF0D /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				9FB30ADA284247E60011144C /* Base */,
+				9FD07E1A287C7AC5003B3BCD /* Cart */,
+				9FD07E10287C4365003B3BCD /* Popup */,
+				9FB30ADD28424E210011144C /* Products */,
+				9FB30AE0284250460011144C /* ProductsDetaitls */,
+				9FD07E15287C582D003B3BCD /* Stores */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		9F9021202839661F008ADF0D /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				9F902115283963CA008ADF0D /* LaunchScreen.storyboard */,
+				9F902110283963C6008ADF0D /* Main.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		9F902121283966AB008ADF0D /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				9FC7B808283AA7B8003199F8 /* Assets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		9F90212228396706008ADF0D /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				9FC7B800283A7E27003199F8 /* EndpointType.swift */,
+				9FC7B806283A8806003199F8 /* HttpMethod.swift */,
+				9F9021232839675C008ADF0D /* Network.swift */,
+				9F90212528396ACE008ADF0D /* Responses.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		9FB30ADA284247E60011144C /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				9FB30ADB284248550011144C /* BaseViewController.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		9FB30ADD28424E210011144C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9FB30ADE28424E470011144C /* ProductsViewController.swift */,
+			);
+			path = Products;
+			sourceTree = "<group>";
+		};
+		9FB30AE0284250460011144C /* ProductsDetaitls */ = {
+			isa = PBXGroup;
+			children = (
+				9FB30AE1284255040011144C /* ProductsDetailsViewController.swift */,
+				9FB30AE2284255040011144C /* ProductsDetailsViewController.xib */,
+			);
+			path = ProductsDetaitls;
+			sourceTree = "<group>";
+		};
+		9FB30AE528425DF40011144C /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				9FD07E21287C8706003B3BCD /* Cart */,
+				9FB30AE628425E310011144C /* Product */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		9FB30AE628425E310011144C /* Product */ = {
+			isa = PBXGroup;
+			children = (
+				9FB30AE728425E6C0011144C /* ProductCollectionViewCell.swift */,
+				9FB30AE828425E6C0011144C /* ProductCollectionViewCell.xib */,
+			);
+			path = Product;
+			sourceTree = "<group>";
+		};
+		9FC7B802283A8329003199F8 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				9FC7B803283A8344003199F8 /* Extensions */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		9FC7B803283A8344003199F8 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				9FB30AEB28426B140011144C /* Double+extansions.swift */,
+				9FC7B804283A8398003199F8 /* Int+Extensions.swift */,
+				9FB30AED284271560011144C /* UIView+extensions.swift */,
+				9FB30AEF2842D1EE0011144C /* UIImageView+Extensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		9FC7B808283AA7B8003199F8 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				9F902113283963CA008ADF0D /* Assets.xcassets */,
+				9FB30AC62842427F0011144C /* Colors.xcassets */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
+		9FD07E10287C4365003B3BCD /* Popup */ = {
+			isa = PBXGroup;
+			children = (
+				9FD07E11287C43A7003B3BCD /* PopupViewController.swift */,
+				9FD07E12287C43A7003B3BCD /* PopupViewController.xib */,
+			);
+			path = Popup;
+			sourceTree = "<group>";
+		};
+		9FD07E15287C582D003B3BCD /* Stores */ = {
+			isa = PBXGroup;
+			children = (
+				9FD07E16287C5844003B3BCD /* StoresViewController.swift */,
+				9FD07E17287C5844003B3BCD /* StoresViewController.xib */,
+			);
+			path = Stores;
+			sourceTree = "<group>";
+		};
+		9FD07E1A287C7AC5003B3BCD /* Cart */ = {
+			isa = PBXGroup;
+			children = (
+				9FD07E1B287C7AE3003B3BCD /* CartViewController.swift */,
+				9FD07E1F287C7B73003B3BCD /* CartViewModal.swift */,
+				9FD07E1C287C7AE3003B3BCD /* CartViewController.xib */,
+			);
+			path = Cart;
+			sourceTree = "<group>";
+		};
+		9FD07E21287C8706003B3BCD /* Cart */ = {
+			isa = PBXGroup;
+			children = (
+				9FD07E22287C873A003B3BCD /* CartTableViewCell.swift */,
+				9FD07E23287C873A003B3BCD /* CartTableViewCell.xib */,
+			);
+			path = Cart;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9F902106283963C6008ADF0D /* Hygge */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9F90211B283963CA008ADF0D /* Build configuration list for PBXNativeTarget "Hygge" */;
+			buildPhases = (
+				E032063C9CD053373D142A0A /* [CP] Check Pods Manifest.lock */,
+				9F902103283963C6008ADF0D /* Sources */,
+				9F902104283963C6008ADF0D /* Frameworks */,
+				9F902105283963C6008ADF0D /* Resources */,
+				8B93A6E085B9C5884A4B5545 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Hygge;
+			productName = Hygge;
+			productReference = 9F902107283963C6008ADF0D /* Hygge.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9F9020FF283963C6008ADF0D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1340;
+				LastUpgradeCheck = 1340;
+				TargetAttributes = {
+					9F902106283963C6008ADF0D = {
+						CreatedOnToolsVersion = 13.4;
+					};
+				};
+			};
+			buildConfigurationList = 9F902102283963C6008ADF0D /* Build configuration list for PBXProject "Hygge" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 9F9020FE283963C6008ADF0D;
+			productRefGroup = 9F902108283963C6008ADF0D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9F902106283963C6008ADF0D /* Hygge */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9F902105283963C6008ADF0D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9FD07E19287C5844003B3BCD /* StoresViewController.xib in Resources */,
+				9FD07E1E287C7AE3003B3BCD /* CartViewController.xib in Resources */,
+				9F902117283963CA008ADF0D /* LaunchScreen.storyboard in Resources */,
+				9FB30AC72842427F0011144C /* Colors.xcassets in Resources */,
+				9F902114283963CA008ADF0D /* Assets.xcassets in Resources */,
+				9FD07E25287C873A003B3BCD /* CartTableViewCell.xib in Resources */,
+				9FD07E14287C43A7003B3BCD /* PopupViewController.xib in Resources */,
+				9F902112283963C6008ADF0D /* Main.storyboard in Resources */,
+				9FB30AEA28425E6C0011144C /* ProductCollectionViewCell.xib in Resources */,
+				9FB30AE4284255040011144C /* ProductsDetailsViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		8B93A6E085B9C5884A4B5545 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Hygge/Pods-Hygge-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Hygge/Pods-Hygge-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Hygge/Pods-Hygge-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E032063C9CD053373D142A0A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Hygge-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9F902103283963C6008ADF0D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9F90212628396ACE008ADF0D /* Responses.swift in Sources */,
+				9FC7B801283A7E27003199F8 /* EndpointType.swift in Sources */,
+				9FB30AE928425E6C0011144C /* ProductCollectionViewCell.swift in Sources */,
+				9F90210B283963C6008ADF0D /* AppDelegate.swift in Sources */,
+				9FB30AE3284255040011144C /* ProductsDetailsViewController.swift in Sources */,
+				9FB30AEE284271560011144C /* UIView+extensions.swift in Sources */,
+				9FC7B807283A8806003199F8 /* HttpMethod.swift in Sources */,
+				9FD07E24287C873A003B3BCD /* CartTableViewCell.swift in Sources */,
+				9FD07E13287C43A7003B3BCD /* PopupViewController.swift in Sources */,
+				9FC7B805283A8398003199F8 /* Int+Extensions.swift in Sources */,
+				9FD07E20287C7B73003B3BCD /* CartViewModal.swift in Sources */,
+				9FB30AF02842D1EE0011144C /* UIImageView+Extensions.swift in Sources */,
+				9FB30ADC284248550011144C /* BaseViewController.swift in Sources */,
+				9FB30ADF28424E470011144C /* ProductsViewController.swift in Sources */,
+				9FB30AEC28426B140011144C /* Double+extansions.swift in Sources */,
+				9F9021242839675C008ADF0D /* Network.swift in Sources */,
+				9FD07E18287C5844003B3BCD /* StoresViewController.swift in Sources */,
+				9FD07E1D287C7AE3003B3BCD /* CartViewController.swift in Sources */,
+				9F90210D283963C6008ADF0D /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		9F902110283963C6008ADF0D /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9F902111283963C6008ADF0D /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		9F902115283963CA008ADF0D /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9F902116283963CA008ADF0D /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		9F902119283963CA008ADF0D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		9F90211A283963CA008ADF0D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		9F90211C283963CA008ADF0D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C3AE04DC0EA4F3224C763CEB /* Pods-Hygge.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = ZXA2872UD5;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Hygge/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = info.Hygge;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		9F90211D283963CA008ADF0D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 42EE6C95AA7B6A162522715E /* Pods-Hygge.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = ZXA2872UD5;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Hygge/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = info.Hygge;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9F902102283963C6008ADF0D /* Build configuration list for PBXProject "Hygge" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9F902119283963CA008ADF0D /* Debug */,
+				9F90211A283963CA008ADF0D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9F90211B283963CA008ADF0D /* Build configuration list for PBXNativeTarget "Hygge" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9F90211C283963CA008ADF0D /* Debug */,
+				9F90211D283963CA008ADF0D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 9F9020FF283963C6008ADF0D /* Project object */;
+}
