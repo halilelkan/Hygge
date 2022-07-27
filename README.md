@@ -9,7 +9,7 @@ Table view cell kullanarak sepet sayfasını hazırladım.
 Sayfa tasarımlarını xib ile hazırladım.
 MVVM ve MVC mimarileri kullanıldı.
 Özelleştirilmiş pop-up hazırladım.
-3rd kütüphane ile servisten görseller çekilip uygulamada gösterdim.
+3rd kütüphane ile servisten görseller çekip uygulamada gösterdim.
 
 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 
